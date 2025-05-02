@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rahini K - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:wght@300;400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', 'Roboto', 'Open Sans', sans-serif;
+      scroll-behavior: smooth;
+      color: white;
+    }
+
+    body::before {
+      content: "";
+      background: url('background.png') no-repeat center center fixed;
+      background-size: cover;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.3;
+      z-index: -1;
+    }
+
+    header, section, footer {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      border-bottom: 3px solid #ffe600;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      gap: 1rem;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: #ffe600;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      font-weight: 500;
+    }
+
+    .navbar li a:hover {
+      background-color: rgba(255, 230, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      color: #ffe600;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li::before {
+      content: "✔ ";
+      color: #ffe600;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: #ffe600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rahini K</h1>
+    <p>Computer Science Engineering Student</p>
+    <p>📞 8610701024 | 📧 k.rahini2005@gmail.com | 📍 Virudunagar, TN</p>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#activities">Activities</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p>Dedicated Computer Science Engineering Student with a strong foundation in programming (C, Java, Python, HTML, CSS, JavaScript) and tools (Canva, Figma, IBM Cognos Analysis). Interested in solving real-world problems and exploring new technologies.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="card">
+      <p><strong>Government College of Engineering, Tirunelveli</strong><br> B.E. Computer Science and Engineering (2022–2026) – CGPA: 8.95</p>
+    </div>
+    <div class="card">
+      <p><strong>S.S.H.N. Hr Sec School, Muhavur</strong><br> SSLC – 87.8% | HSC – 92.8%</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="card">
+      <h3>Programming Languages & Tools</h3>
+      <ul>
+        <li>Java</li>
+        <li>C</li>
+        <li>Python</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Figma, Canva</li>
+        <li>IBM Cognos Analysis</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Communication</li>
+        <li>Teamwork</li>
+        <li>Problem Solving</li>
+        <li>Critical Thinking</li>
+        <li>Adaptability</li>
+        <li>Time Management</li>
+        <li>Fast Learning</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="card">
+      <ul>
+        <li>First prize in code debugging – Fransis Xavier College, Tirunelveli</li>
+        <li>Introduction to Cyber Security – Great Learning</li>
+        <li>RH124 (RHCSA) Attendance Certificate – RedHat</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="card">
+    <ul>
+      <li>
+        <p><strong>Real-time Face Recognition Attendance System</strong><br>
+        Developed a GUI application using Tkinter and OpenCV for automated attendance with real-time face recognition.</p>
+      </li>
+      <li>
+        <p><strong>Responsive Personal Portfolio Website</strong><br>
+        Designed and developed a visually engaging, responsive portfolio website using HTML, CSS, and JavaScript. Integrated navigation bar, background effects, and section-based layout to professionally present personal and academic details.</p>
+      </li>
+      
+    </ul>
+    </div>
+  </section>
+
+  <section id="activities">
+    <h2 class="section-title">Activities</h2>
+    <div class="card">
+      <ul>
+        <li>Solved 300+ coding problems on GeeksforGeeks</li>
+        <li>Solved 150+ coding problems on Skillrack</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Rahini K | Designed with ❤</p>
+  </footer>
+</body>
+</html>
